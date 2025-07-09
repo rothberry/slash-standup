@@ -4,11 +4,11 @@
 ## Deliverables
 - Slack slash command for */standup*
 - opens a dialog the the user can input 3 fields
-- - What you did yesterday?
-- - What you doing today?
-- - Any blockers?
+    - What you did yesterday?
+    - What you doing today?
+    - Any blockers?
 - End of Day summary
-- - Reiterate the responses for that day
+    - Reiterate the responses for that day
 
 
 ## Database
@@ -23,5 +23,3 @@ Questions
 - questions
 Responses
 - answer, user_id, question_id, timestamp
-
-## Notes

@@ -21,5 +21,10 @@ class SlackController < ApplicationController
     
 
   end
+
+  def menu_json
+    puts "MENU_LOADDD?"
+    binding.pry
+  end
   
 end

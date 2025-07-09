@@ -2,12 +2,14 @@ require_relative "boot"
 
 # require "rails/all"
 # This list is here as documentation only - it's not used
+=begin 
 omitted = %w(
   active_storage/engine
   action_cable/engine
   action_mailbox/engine
   action_text/engine
-)
+) 
+=end
 
 # Only the frameworks in Rails that do not pollute our routes
 %w(
