@@ -18,6 +18,7 @@ class SlackController < ApplicationController
 
     payload = JSON.parse(params[:payload])
     channel_id = payload["channel"]["id"]
+    response_url = payload["response_url"]
     
     action = payload["actions"][0]["action_id"]
 
@@ -35,8 +36,10 @@ class SlackController < ApplicationController
       render json: {}
     elsif action == "cancel-action"
       puts "CANCELING"
-      render json: {
-        text: 'BYEEEEE'}
+      uri = URI(response_url)
+
+      binding.pry
+
     end
     
   end
