@@ -1,5 +1,6 @@
 require 'pry'
 require 'json'
+require 'net/http'
 
 class SlackController < ApplicationController
 
@@ -37,6 +38,7 @@ class SlackController < ApplicationController
     elsif action == "cancel-action"
       puts "CANCELING"
       uri = URI(response_url)
+      headers = {'Authorization'=>"Bearer #{ENV["OAUTH"]}"}
 
       binding.pry
 
