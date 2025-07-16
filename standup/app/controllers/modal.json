@@ -27,7 +27,7 @@
             "type": "section",
             "text": {
                 "type": "plain_text",
-                "text": "Hello <USER> How was you're day?",
+                "text": "Hello, How was your day?",
                 "emoji": true
             }
         },
